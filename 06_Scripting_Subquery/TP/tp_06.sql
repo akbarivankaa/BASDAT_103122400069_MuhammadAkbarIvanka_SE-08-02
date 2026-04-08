@@ -335,7 +335,6 @@ GROUP BY
     th.KELAS
 HAVING 
     COUNT(j.ID_JADWAL) = (
-        -- Ini adalah Subquery untuk mencari angka pemakaian paling tinggi (MAX)
         SELECT MAX(COUNT(ID_JADWAL)) 
         FROM JADWAL_10312240069 
         GROUP BY ID_THEATER
